@@ -12,7 +12,7 @@ if (token) {
 logoutBtn.addEventListener('click', (e) => {
     e.preventDefault()
     localStorage.removeItem('token')
-    window.location = 'http://localhost:7700/project_list.html'
+    window.location = 'https://devsearchapiweb.netlify.app/project_list.html'
 })
 
 
