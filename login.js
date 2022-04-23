@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
             console.log('DATA:', data.access)
             if (data.access) {
                 localStorage.setItem('token', data.access)
-                window.location = 'https://master--devsearchapiweb.netlify.app/'
+                window.location = 'https://master--devsearchapiweb.netlify.app/index.html'
             } else {
                 alert('Username OR password did not work')
             }
