@@ -24,5 +24,6 @@ form.addEventListener('submit', (e) => {
             } else {
                 alert('Username OR password did not work')
             }
+            return false
         })
 })
