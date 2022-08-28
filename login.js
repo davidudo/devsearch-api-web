@@ -20,8 +20,9 @@ form.addEventListener('submit', (e) => {
             console.log('DATA:', data.access)
             if (data.access) {
                 localStorage.setItem('token', data.access)
-                alert("Got it")
+                alert("You have been logged in successfully!")
                 window.history.back()
+                window.loaction.reload()
             } else {
                 alert('Username OR password did not work')
             }
