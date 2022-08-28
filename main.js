@@ -12,6 +12,7 @@ if (token) {
 logoutBtn.addEventListener('click', (e) => {
     e.preventDefault()
     localStorage.removeItem('token')
+    alert("You have been successfully logged out!")
     window.location.href = 'https://davidudo.github.io/devsearch-api-web/'
 })
 
