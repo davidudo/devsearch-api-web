@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
       console.log('DATA:', data.access)
       if (data.access) {
         localStorage.setItem('token', data.access);
-        window.history.back();
+        window.location.replace("https://davidudo.github.io/devsearch-api-web");
         alert("You have successfully logged in!");
         if (windows.location.href !== "https://davidudo.github.io/devsearch-api-web") {
           window.location.href = "https://davidudo.github.io/devsearch-api-web"
