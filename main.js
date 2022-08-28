@@ -12,7 +12,7 @@ if (token) {
 logoutBtn.addEventListener('click', (e) => {
     e.preventDefault()
     localStorage.removeItem('token')
-    window.location.href = 'https://davidudo.github.io/devsearch-api-web/index.html'
+    window.location.href = 'https://davidudo.github.io/devsearch-api-web/'
 })
 
 
