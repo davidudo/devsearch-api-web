@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
                 localStorage.setItem('token', data.access)
                 alert("You have been logged in successfully!")
                 window.history.back()
-                window.loaction.reload()
+                window.location.reload()
             } else {
                 alert('Username OR password did not work')
             }
