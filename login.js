@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
         'password': form.password.value
     }
 
-    fetch('http://devsearchweb.herokuapp.com/api/users/token/', {
+    fetch('https://devsearchweb.herokuapp.com/api/users/token/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -20,7 +20,8 @@ form.addEventListener('submit', (e) => {
             console.log('DATA:', data.access)
             if (data.access) {
                 localStorage.setItem('token', data.access)
-                window.location.href = 'https://davidudo.github.io/devsearch-api-web/'
+                alert(localStorage.setItem('token', data.access))
+                //window.location.href = 'https://davidudo.github.io/devsearch-api-web/'
             } else {
                 alert('Username OR password did not work')
             }
