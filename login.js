@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
             console.log('DATA:', data.access)
             if (data.access) {
                 localStorage.setItem('token', data.access)
-                alert(localStorage.setItem('token', data.access))
+                alert(localStorage.getItem('token', data.access))
                 //window.location.href = 'https://davidudo.github.io/devsearch-api-web/'
             } else {
                 alert('Username OR password did not work')
